@@ -1,0 +1,113 @@
+body {
+    background-image: -moz-linear-gradient(135deg, rgb(239, 204, 255), rgb(204, 255, 237));
+    background-image: -webkit-linear-gradient(135deg, rgb(239, 204, 255), rgb(204, 255, 237));
+    background-image: linear-gradient(135deg, rgb(239, 204, 255), rgb(204, 255, 237));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+  @font-face {
+    font-family: "iconfont"; /* Project id 3654994 */
+    src: url('./static/font/iconfont.woff2?t=1663487977238') format('woff2'),
+         url('./static/font/iconfont.woff?t=1663487977238') format('woff'),
+         url('./static/font/iconfont.ttf?t=1663487977238') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-bofang:before {
+    content: "\e87c";
+  }
+  
+  .icon-zanting:before {
+    content: "\e87a";
+  }
+  
+  .icon-shengyin_shiti:before {
+    content: "\eca5";
+  }
+  
+  .icon-quanpingzuidahua:before {
+    content: "\e70e";
+  }
+  
+  .icon-guanbi:before {
+    content: "\e600";
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  image {
+    display: block;
+  }
+  body {
+    height: 100vh;
+  }
+  .clearfix::after{
+    content: '';
+    display: 'block';
+    clear: both;
+  }
+
+  #list {
+    width: 1226px;
+    margin: 20px auto;
+  }
+  #list .list-wrap {
+    width: 1240px;
+  }
+  #list .list-wrap li {
+    float: left;
+    width: 296px;
+    height: auto;
+    margin-right: 14px;
+    background: white;
+  }
+  #list .list-wrap li:hover {
+    transition: all 300ms;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 4px 6px 8px 2px #c3bcbc;
+  }
+  #list .list-wrap div {
+    position: relative;
+  }
+  #list .list-wrap img {
+    width: 100%;
+    height: 100%;
+  }
+  #list .list-wrap i {
+    position: absolute;
+    bottom: 10px;
+    left: 19px;
+    color: azure;
+    border: 2px white solid;
+    border-radius: 10px;
+    width: 32px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+  #list .list-wrap i:hover {
+    background: orange;
+    cursor: pointer;
+  }
+  #list .list-wrap h3 {
+    font-size: 12px;
+    text-align: center;
+    padding: 30px 0;
+  }

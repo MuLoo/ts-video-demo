@@ -1,0 +1,116 @@
+:root {
+    --white-color: #fff;
+}
+.video {
+    position: relative;
+    overflow: hidden;
+}
+.video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-controls {
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms;
+}
+.video-progress {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #222223;
+}
+.video-progress-now {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #ff6a03;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+.video-progress-suc {
+    width: 0%;
+    height: 100%;
+    background-color: #666;
+    position: absolute;
+    left: 0;
+}
+.video-progress-bar {
+    height: 14px;
+    width: 14px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    position:absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0px, -5px);
+    cursor: pointer;
+}
+.video-play {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 35px;
+}
+.video-play, .video-full, .video-volume i {
+    font-size: 20px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.video-time {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 30px;
+    color: var(--white-color);
+}
+.video-full {
+    float: right;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 20px;
+}
+.video-volume {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: 45px;
+}
+.video-volume i {
+    margin-right: 10px;
+}
+.video-volprogress {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    background: #222223;
+}
+.video-volprogress-now {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    background-color: #ff6a03;
+    left: 0;
+    z-index: 1;
+}
+.video-volprogress-bar {
+    height: 14px;
+    width: 14px;
+    z-index: 2;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    position:absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(0px, -5px);
+    cursor: pointer;
+}
